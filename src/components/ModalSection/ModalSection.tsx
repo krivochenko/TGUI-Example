@@ -1,5 +1,5 @@
 import styles from './ModalSection.module.css';
-import { Button, Modal, Placeholder, Section } from '@xelene/tgui';
+import { Button, Input, Modal, Placeholder, Section } from '@xelene/tgui';
 
 const PlaceholderImage = () => (
   <img
@@ -14,12 +14,7 @@ const ModalWithTrigger = () => (
     header={<Modal.Header />}
     trigger={<Button size="l" stretched>Open modal</Button>}
   >
-    <Placeholder
-      header="This is nice modal, isn't it?"
-      description="Swipe up to close"
-    >
-      <PlaceholderImage />
-    </Placeholder>
+    <Input placeholder="Type something" />
   </Modal>
 );
 
